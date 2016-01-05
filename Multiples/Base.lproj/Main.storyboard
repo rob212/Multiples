@@ -27,11 +27,21 @@
                                     <constraint firstAttribute="height" constant="96" id="y2Z-3U-hKX"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-Cm-f9j">
+                                <rect key="frame" x="205" y="397" width="190" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="2Ch-0U-zuU"/>
+                                    <constraint firstAttribute="height" constant="157" id="tM4-cf-VfB"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtN-Cm-f9j" secondAttribute="bottom" constant="46" id="5dI-6I-hrW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1fO-iM-nFX" secondAttribute="bottom" id="6iJ-2V-UvA"/>
                             <constraint firstAttribute="trailing" secondItem="1fO-iM-nFX" secondAttribute="trailing" id="Hkz-We-ptF"/>
                             <constraint firstItem="1fO-iM-nFX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N8z-0h-mF7"/>
+                            <constraint firstItem="jtN-Cm-f9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NeC-Eu-tIP"/>
                             <constraint firstItem="vgL-59-LWo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="kzu-Ev-a3K"/>
                             <constraint firstItem="vgL-59-LWo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nl4-0Q-XIj"/>
                             <constraint firstItem="1fO-iM-nFX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yzf-lA-xQ0"/>
@@ -46,5 +56,6 @@
     <resources>
         <image name="MULTIPLES" width="533" height="124"/>
         <image name="chalkboard" width="801" height="750"/>
+        <image name="play" width="272" height="268"/>
     </resources>
 </document>
