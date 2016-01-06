@@ -27,15 +27,18 @@
                                     <constraint firstAttribute="height" constant="96" id="y2Z-3U-hKX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-Cm-f9j">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-Cm-f9j" userLabel="PlayButton">
                                 <rect key="frame" x="205" y="397" width="190" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="2Ch-0U-zuU"/>
                                     <constraint firstAttribute="height" constant="157" id="tM4-cf-VfB"/>
                                 </constraints>
                                 <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRu-tY-TWU"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What multiple to add by?" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="reM-Ad-hDt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What multiple to add by?" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="reM-Ad-hDt" userLabel="multipleInput">
                                 <rect key="frame" x="205" y="311" width="190" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pcT-a4-phJ"/>
@@ -43,7 +46,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click Add to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-v2-cX8">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0A-xj-UC1" userLabel="AddButton">
+                                <rect key="frame" x="168" y="407" width="265" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="cJs-Bn-Gnz"/>
+                                    <constraint firstAttribute="height" constant="101" id="f8K-7v-Tiy"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BO8-mk-vua"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click Add to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-v2-cX8" userLabel="AddLabel">
                                 <rect key="frame" x="72" y="157" width="456" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="456" id="HKi-ma-GkW"/>
@@ -53,14 +67,6 @@
                                 <color key="textColor" red="0.98352667297979801" green="0.98352667297979801" blue="0.98352667297979801" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0A-xj-UC1">
-                                <rect key="frame" x="168" y="407" width="265" height="101"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="265" id="cJs-Bn-Gnz"/>
-                                    <constraint firstAttribute="height" constant="101" id="f8K-7v-Tiy"/>
-                                </constraints>
-                                <state key="normal" image="add"/>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtN-Cm-f9j" secondAttribute="bottom" constant="46" id="5dI-6I-hrW"/>
@@ -80,6 +86,13 @@
                             <constraint firstItem="1fO-iM-nFX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yzf-lA-xQ0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="J0A-xj-UC1" id="2l6-yu-hfW"/>
+                        <outlet property="addLabel" destination="Mdq-v2-cX8" id="sxV-BR-9HK"/>
+                        <outlet property="logoImage" destination="vgL-59-LWo" id="NKX-Xj-GmR"/>
+                        <outlet property="multipleInput" destination="reM-Ad-hDt" id="tk4-ks-sKX"/>
+                        <outlet property="playButton" destination="jtN-Cm-f9j" id="bWR-U6-aM6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
