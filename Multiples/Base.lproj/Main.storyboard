@@ -35,14 +35,47 @@
                                 </constraints>
                                 <state key="normal" image="play"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What multiple to add by?" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="reM-Ad-hDt">
+                                <rect key="frame" x="205" y="311" width="190" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pcT-a4-phJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click Add to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-v2-cX8">
+                                <rect key="frame" x="72" y="157" width="456" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="456" id="HKi-ma-GkW"/>
+                                    <constraint firstAttribute="height" constant="32" id="gUD-cw-Z0n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.98352667297979801" green="0.98352667297979801" blue="0.98352667297979801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0A-xj-UC1">
+                                <rect key="frame" x="168" y="407" width="265" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="cJs-Bn-Gnz"/>
+                                    <constraint firstAttribute="height" constant="101" id="f8K-7v-Tiy"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtN-Cm-f9j" secondAttribute="bottom" constant="46" id="5dI-6I-hrW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1fO-iM-nFX" secondAttribute="bottom" id="6iJ-2V-UvA"/>
+                            <constraint firstItem="jtN-Cm-f9j" firstAttribute="width" secondItem="reM-Ad-hDt" secondAttribute="width" id="Edn-Mk-03A"/>
+                            <constraint firstItem="jtN-Cm-f9j" firstAttribute="top" secondItem="reM-Ad-hDt" secondAttribute="bottom" constant="46" id="GJd-gV-UeJ"/>
                             <constraint firstAttribute="trailing" secondItem="1fO-iM-nFX" secondAttribute="trailing" id="Hkz-We-ptF"/>
+                            <constraint firstItem="J0A-xj-UC1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jut-zW-jNj"/>
+                            <constraint firstItem="Mdq-v2-cX8" firstAttribute="top" secondItem="vgL-59-LWo" secondAttribute="bottom" constant="19" id="N4M-HZ-PIa"/>
                             <constraint firstItem="1fO-iM-nFX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N8z-0h-mF7"/>
+                            <constraint firstItem="reM-Ad-hDt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NXQ-OX-rjn"/>
                             <constraint firstItem="jtN-Cm-f9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NeC-Eu-tIP"/>
+                            <constraint firstItem="Mdq-v2-cX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvO-Dh-IAV"/>
                             <constraint firstItem="vgL-59-LWo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="kzu-Ev-a3K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J0A-xj-UC1" secondAttribute="bottom" constant="92" id="mSi-ip-SVL"/>
                             <constraint firstItem="vgL-59-LWo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nl4-0Q-XIj"/>
                             <constraint firstItem="1fO-iM-nFX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yzf-lA-xQ0"/>
                         </constraints>
@@ -50,11 +83,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="368"/>
+            <point key="canvasLocation" x="354" y="362"/>
         </scene>
     </scenes>
     <resources>
         <image name="MULTIPLES" width="533" height="124"/>
+        <image name="add" width="211" height="101"/>
         <image name="chalkboard" width="801" height="750"/>
         <image name="play" width="272" height="268"/>
     </resources>
